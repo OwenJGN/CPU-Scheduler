@@ -1,4 +1,6 @@
+import java.util.LinkedList;
 import java.util.Properties;
+import java.util.Queue;
 
 /**
  * Round Robin Scheduler
@@ -7,7 +9,12 @@ import java.util.Properties;
  */
 public class RRScheduler extends AbstractScheduler {
 
-  // TODO
+  private Queue<Process> readyQueue;
+  private int timeQuantum;
+  public RRScheduler(int time){
+    timeQuantum = time;
+    readyQueue = new LinkedList<>();
+  }
 
   /**
    * Adds a process to the ready queue.
@@ -19,7 +26,6 @@ public class RRScheduler extends AbstractScheduler {
     // TODO
 
   }
-
   /**
    * Removes the next process to be run from the ready queue 
    * and returns it. 
@@ -30,5 +36,9 @@ public class RRScheduler extends AbstractScheduler {
     // TODO
 
     return null;
+  }
+
+  public int getTimeQuantum(){
+    return timeQuantum;
   }
 }

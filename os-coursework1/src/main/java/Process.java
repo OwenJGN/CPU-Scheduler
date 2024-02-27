@@ -30,6 +30,7 @@ public abstract class Process implements Comparable<Process> {
 
     // TODO
     
+    if(terminatedTime>0) {return getTurnaroundTime() - (cpuTime + blockedTime);}
     return 0;
   }
 
@@ -39,7 +40,8 @@ public abstract class Process implements Comparable<Process> {
   public int getTurnaroundTime() {
 
     // TODO
-    
+
+    if(terminatedTime>0) {return terminatedTime - createdTime;}
     return 0;
   }
 
@@ -49,7 +51,8 @@ public abstract class Process implements Comparable<Process> {
   public int getResponseTime() {
 
     // TODO
-    
+
+    if(startedTime>0) {return startedTime - createdTime;}
     return 0;
   }
 
