@@ -10,9 +10,7 @@ import java.util.Queue;
 public class RRScheduler extends AbstractScheduler {
 
   private Queue<Process> readyQueue;
-  private int timeQuantum;
-  public RRScheduler(int time){
-    timeQuantum = time;
+  public RRScheduler(){
     readyQueue = new LinkedList<>();
   }
 
@@ -22,9 +20,7 @@ public class RRScheduler extends AbstractScheduler {
    * after having fully used its time quantum.
    */
   public void ready(Process process, boolean usedFullTimeQuantum) {
-
-    // TODO
-
+   readyQueue.offer(process);
   }
   /**
    * Removes the next process to be run from the ready queue 
@@ -32,13 +28,11 @@ public class RRScheduler extends AbstractScheduler {
    * Returns null if there is no process to run.
    */
   public Process schedule() {
-
-    // TODO
-
-    return null;
+    return readyQueue.poll();
   }
 
-  public int getTimeQuantum(){
-    return timeQuantum;
+  public int getTimeQuantum() {
+    return 0;
   }
+
 }
