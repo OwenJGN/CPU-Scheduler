@@ -1,3 +1,5 @@
+import java.util.Comparator;
+import java.util.PriorityQueue;
 import java.util.Properties;
 import java.util.Queue;
 
@@ -8,15 +10,17 @@ import java.util.Queue;
  */
 public class SJFScheduler extends AbstractScheduler {
 
-  private Queue<Process> readyQueue;
-  private int initialBurstEstimate;
-  private int alphaBurstEstimate;
+  private PriorityQueue<Process> readyQueue;
+  private double burstEstimate;
+  private double alphaBurstEstimate;
 
+  public SJFScheduler(){
+    readyQueue = new PriorityQueue<>(Comparator.comparingInt())
+  }
   @Override
   public void initialize(Properties parameters) {
-    initialBurstEstimate = Integer.parseInt(parameters.getProperty("initialBurstEstimate"));
-    alphaBurstEstimate = Integer.parseInt(parameters.getProperty("alphaBurstEstimate"));
-
+    burstEstimate = Double.parseDouble(parameters.getProperty("initialBurstEstimate"));
+    alphaBurstEstimate = Double.parseDouble(parameters.getProperty("alphaBurstEstimate"));
   }
 
   /**
@@ -36,9 +40,7 @@ public class SJFScheduler extends AbstractScheduler {
    * Returns null if there is no process to run.
    */
   public Process schedule() {
-
-    // TODO
-
-    return null;
+    System.out.println("Scheduler selects process "+readyQueue.poll());
+    return readyQueue.poll();
   }
 }
