@@ -1,4 +1,6 @@
+import java.util.LinkedList;
 import java.util.Properties;
+import java.util.Queue;
 
 /**
  * Ideal Shortest Job First Scheduler
@@ -7,7 +9,11 @@ import java.util.Properties;
  */
 public class IdealSJFScheduler extends AbstractScheduler {
 
-  // TODO
+  private Queue<Process> readyQueue;
+
+  public IdealSJFScheduler(){
+    readyQueue = new LinkedList<>();
+  }
 
   /**
    * Adds a process to the ready queue.
@@ -15,9 +21,7 @@ public class IdealSJFScheduler extends AbstractScheduler {
    * after having fully used its time quantum.
    */
   public void ready(Process process, boolean usedFullTimeQuantum) {
-
-    // TODO
-
+    readyQueue.add(process);
   }
 
   /**
@@ -26,9 +30,21 @@ public class IdealSJFScheduler extends AbstractScheduler {
    * Returns null if there is no process to run.
    */
   public Process schedule() {
+    if (readyQueue.isEmpty()) {
+      return null;
+    }
 
-    // TODO
+    Process shortestProcess = readyQueue.peek();
+    int shortestBurst = shortestProcess.getNextBurst();
 
-    return null;
+    for (Process process : readyQueue) {
+      int nextBurst = process.getNextBurst();
+      if (nextBurst < shortestBurst) {
+        shortestBurst = nextBurst;
+        shortestProcess = process;
+      }
+    }
+    System.out.println("Scheduler selects process "+readyQueue.remove(shortestProcess));
+    return shortestProcess;
   }
 }

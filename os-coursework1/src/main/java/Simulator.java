@@ -99,7 +99,7 @@ public class Simulator
       BufferedWriter out = new BufferedWriter(new FileWriter(args[1]));
       out.write(processModel.getOutput());
       out.flush();
-      out.close();   
+      out.close();
     } catch (IOException e) {
       System.err.println("Problem writing output file");
       System.err.print(e);

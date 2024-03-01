@@ -1,4 +1,5 @@
 import java.util.Properties;
+import java.util.Queue;
 
 /**
  * Shortest Job First Scheduler
@@ -7,7 +8,16 @@ import java.util.Properties;
  */
 public class SJFScheduler extends AbstractScheduler {
 
-  // TODO
+  private Queue<Process> readyQueue;
+  private int initialBurstEstimate;
+  private int alphaBurstEstimate;
+
+  @Override
+  public void initialize(Properties parameters) {
+    initialBurstEstimate = Integer.parseInt(parameters.getProperty("initialBurstEstimate"));
+    alphaBurstEstimate = Integer.parseInt(parameters.getProperty("alphaBurstEstimate"));
+
+  }
 
   /**
    * Adds a process to the ready queue.
@@ -21,8 +31,8 @@ public class SJFScheduler extends AbstractScheduler {
   }
 
   /**
-   * Removes the next process to be run from the ready queue 
-   * and returns it. 
+   * Removes the next process to be run from the ready queue
+   * and returns it.
    * Returns null if there is no process to run.
    */
   public Process schedule() {

@@ -11,6 +11,7 @@ public abstract class AbstractScheduler {
   /**
    * Initializes the scheduler from the given parameters
    */
+
   public void initialize(Properties parameters) {
   }
   

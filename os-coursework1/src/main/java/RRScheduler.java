@@ -10,8 +10,13 @@ import java.util.Queue;
 public class RRScheduler extends AbstractScheduler {
 
   private Queue<Process> readyQueue;
+  private int timeQuantum;
   public RRScheduler(){
     readyQueue = new LinkedList<>();
+  }
+
+  public void initialize(Properties parameters) {
+    timeQuantum = Integer.parseInt(parameters.getProperty("timeQuantum"));
   }
 
   /**
@@ -19,20 +24,19 @@ public class RRScheduler extends AbstractScheduler {
    * usedFullTimeQuantum is true if process is being moved to ready
    * after having fully used its time quantum.
    */
-  public void ready(Process process, boolean usedFullTimeQuantum) {
-   readyQueue.offer(process);
-  }
+  public void ready(Process process, boolean usedFullTimeQuantum) {readyQueue.offer(process);}
   /**
    * Removes the next process to be run from the ready queue 
    * and returns it. 
    * Returns null if there is no process to run.
    */
   public Process schedule() {
+    System.out.println("Scheduler selects process "+readyQueue.peek());
     return readyQueue.poll();
   }
 
   public int getTimeQuantum() {
-    return 0;
+    return timeQuantum;
   }
 
 }

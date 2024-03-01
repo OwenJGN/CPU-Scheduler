@@ -1,3 +1,4 @@
+import java.util.*;
 import java.util.Properties;
 
 /**
@@ -7,7 +8,21 @@ import java.util.Properties;
  */
 public class FeedbackRRScheduler extends AbstractScheduler {
 
-  // TODO
+  private PriorityQueue<Process> readyQueue;
+  private int timeQuantum;
+  @Override
+  public void initialize(Properties parameters) {
+    timeQuantum = Integer.parseInt(parameters.getProperty("timeQuantum"));
+  }
+
+  public FeedbackRRScheduler() {
+    readyQueue = new PriorityQueue<>(new Comparator<Process>() {
+      @Override
+      public int compare(Process p1, Process p2) {
+        return Integer.compare(p1.getPriority(), p2.getPriority());
+      }
+    });
+  }
 
   /**
    * Adds a process to the ready queue.
@@ -15,9 +30,10 @@ public class FeedbackRRScheduler extends AbstractScheduler {
    * after having fully used its time quantum.
    */
   public void ready(Process process, boolean usedFullTimeQuantum) {
-
-    // TODO
-
+    if (usedFullTimeQuantum) {
+      process.setPriority(process.getPriority()+1);
+    }
+    readyQueue.add(process);
   }
 
   /**
@@ -26,9 +42,15 @@ public class FeedbackRRScheduler extends AbstractScheduler {
    * Returns null if there is no process to run.
    */
   public Process schedule() {
+    System.out.println("Scheduler selects process "+readyQueue.peek());
+    return readyQueue.poll();
+  }
 
-    // TODO
+  public boolean isPreemptive() {
+    return true;
+  }
 
-    return null;
+  public int getTimeQuantum() {
+    return timeQuantum;
   }
 }
