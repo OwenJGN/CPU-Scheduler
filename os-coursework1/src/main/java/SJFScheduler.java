@@ -15,7 +15,13 @@ public class SJFScheduler extends AbstractScheduler {
   private double alphaBurstEstimate;
 
   public SJFScheduler(){
-    readyQueue = new PriorityQueue<>(Comparator.comparingInt(Process::getPriority));
+    readyQueue = new PriorityQueue<>(new Comparator<Process>() {
+      @Override
+      public int compare(Process p1, Process p2) {
+        p1.setPriority((int) (burstEstimate = alphaBurstEstimate + p2.getNextBurst() +(1-alphaBurstEstimate) * burstEstimate));
+        return Integer.compare(p1.getPriority(), p2.getPriority());
+      }
+    });
   }
   @Override
   public void initialize(Properties parameters) {
@@ -29,7 +35,6 @@ public class SJFScheduler extends AbstractScheduler {
    * after having fully used its time quantum.
    */
   public void ready(Process process, boolean usedFullTimeQuantum) {
-    burstEstimate = alphaBurstEstimate + process.getNextBurst() +(1-alphaBurstEstimate) * burstEstimate;
     readyQueue.add(process);
   }
 

@@ -10,17 +10,15 @@ import java.util.Random;
 public class ExponentialGenerator {
   private Random rand;
   private double mean;
-  private double alphaBurstEstimate;
-  private double initialBurstEstimate;
+
   /**
    * @param seed An instance of {@link java.util.Random}
    * @param mean What average to use in the distribution
    */
-  public ExponentialGenerator(Random  rand, double mean, double initial, double alpha) {
+  public ExponentialGenerator(Random  rand, double mean) {
     this.mean = mean;
     this.rand = rand;
-    this.initialBurstEstimate = initial;
-    this.alphaBurstEstimate = alpha;
+
   }
 	
   /**
@@ -30,7 +28,4 @@ public class ExponentialGenerator {
     return (int)Math.ceil(-mean * Math.log(1-rand.nextDouble()));
   }
 
-  public int estimateNextBurst(int currentBurst){
-    return (int) (this.alphaBurstEstimate * currentBurst +(1 - this.alphaBurstEstimate) * this.initialBurstEstimate );
-  }
 }
