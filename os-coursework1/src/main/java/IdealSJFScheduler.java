@@ -35,21 +35,23 @@ public class IdealSJFScheduler extends AbstractScheduler {
         return null;
       }
 
-      Process shortestProcess = null;
-      int shortestBurst = Integer.MAX_VALUE;
 
-      System.out.println("Queue before scheduling: ");
-      for (Process process : readyQueue) {
-        int nextBurst = process.getNextBurst();
-        System.out.println("Process ID: " + process.getId() + ", Burst Time: " + process.getNextBurst());
-        if (nextBurst < shortestBurst) {
-          shortestBurst = nextBurst;
-          shortestProcess = process;
-        }
-      }
-      readyQueue.remove(shortestProcess);
-      System.out.println("Scheduler selects process " + shortestProcess);
-      return shortestProcess;
+          Process shortestProcess = null;
+          int shortestBurst = Integer.MAX_VALUE;
+
+          System.out.println("Queue before scheduling: ");
+          for (Process process : readyQueue) {
+              int nextBurst = process.getNextBurst();
+              System.out.println("Process ID: " + process.getId() + ", Burst Time: " + process.getNextBurst());
+              if (nextBurst < shortestBurst) {
+                  shortestBurst = nextBurst;
+                  shortestProcess = process;
+              }
+          }
+          readyQueue.remove(shortestProcess);
+          System.out.println("Scheduler selects process " + shortestProcess);
+          return shortestProcess;
+
     }
 
 }

@@ -18,8 +18,9 @@ public class SJFScheduler extends AbstractScheduler {
     readyQueue = new PriorityQueue<>(new Comparator<Process>() {
       @Override
       public int compare(Process p1, Process p2) {
-        p1.setPriority((int) (burstEstimate = alphaBurstEstimate + p2.getNextBurst() +(1-alphaBurstEstimate) * burstEstimate));
-        return Integer.compare(p1.getPriority(), p2.getPriority());
+        double burstEstimateForP1 = alphaBurstEstimate * p1.getNextBurst() + (1 - alphaBurstEstimate) * burstEstimate;
+        double burstEstimateForP2 = alphaBurstEstimate * p2.getNextBurst() + (1 - alphaBurstEstimate) * burstEstimate;
+        return Double.compare(burstEstimateForP1, burstEstimateForP2);
       }
     });
   }
@@ -44,7 +45,7 @@ public class SJFScheduler extends AbstractScheduler {
    * Returns null if there is no process to run.
    */
   public Process schedule() {
-    System.out.println("Scheduler selects process "+readyQueue.poll());
+    System.out.println("Scheduler selects process "+readyQueue.peek());
     return readyQueue.poll();
   }
 }

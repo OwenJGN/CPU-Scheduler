@@ -10,10 +10,6 @@ public class FeedbackRRScheduler extends AbstractScheduler {
 
   private PriorityQueue<Process> readyQueue;
   private int timeQuantum;
-  @Override
-  public void initialize(Properties parameters) {
-    timeQuantum = Integer.parseInt(parameters.getProperty("timeQuantum"));
-  }
 
   public FeedbackRRScheduler() {
     readyQueue = new PriorityQueue<>(new Comparator<Process>() {
@@ -22,6 +18,10 @@ public class FeedbackRRScheduler extends AbstractScheduler {
         return Integer.compare(p1.getPriority(), p2.getPriority());
       }
     });
+  }
+  @Override
+  public void initialize(Properties parameters) {
+    timeQuantum = Integer.parseInt(parameters.getProperty("timeQuantum"));
   }
 
   /**
