@@ -39,10 +39,9 @@ public class IdealSJFScheduler extends AbstractScheduler {
           Process shortestProcess = null;
           int shortestBurst = Integer.MAX_VALUE;
 
-          System.out.println("Queue before scheduling: ");
           for (Process process : readyQueue) {
               int nextBurst = process.getNextBurst();
-              System.out.println("Process ID: " + process.getId() + ", Burst Time: " + process.getNextBurst());
+
               if (nextBurst < shortestBurst) {
                   shortestBurst = nextBurst;
                   shortestProcess = process;

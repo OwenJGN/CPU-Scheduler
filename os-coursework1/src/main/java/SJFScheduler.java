@@ -16,7 +16,7 @@ public class SJFScheduler extends AbstractScheduler {
 
   public SJFScheduler(){
     readyQueue = new PriorityQueue<>(new Comparator<Process>() {
-      @Override
+
       public int compare(Process p1, Process p2) {
         double burstEstimateForP1 = alphaBurstEstimate * p1.getNextBurst() + (1 - alphaBurstEstimate) * burstEstimate;
         double burstEstimateForP2 = alphaBurstEstimate * p2.getNextBurst() + (1 - alphaBurstEstimate) * burstEstimate;
@@ -24,7 +24,7 @@ public class SJFScheduler extends AbstractScheduler {
       }
     });
   }
-  @Override
+
   public void initialize(Properties parameters) {
     burstEstimate = Double.parseDouble(parameters.getProperty("initialBurstEstimate"));
     alphaBurstEstimate = Double.parseDouble(parameters.getProperty("alphaBurstEstimate"));
