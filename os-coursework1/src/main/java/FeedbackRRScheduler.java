@@ -13,13 +13,12 @@ public class FeedbackRRScheduler extends AbstractScheduler {
 
   public FeedbackRRScheduler() {
     readyQueue = new PriorityQueue<>(new Comparator<Process>() {
-      @Override
       public int compare(Process p1, Process p2) {
         return Integer.compare(p1.getPriority(), p2.getPriority());
       }
     });
   }
-  @Override
+
   public void initialize(Properties parameters) {
     timeQuantum = Integer.parseInt(parameters.getProperty("timeQuantum"));
   }
