@@ -34,7 +34,4 @@ public class IdealSJFScheduler extends AbstractScheduler {
   public Process schedule() {
       return readyQueue.poll();
   }
-
-  public boolean isPreemptive(){ return false; }
-
 }

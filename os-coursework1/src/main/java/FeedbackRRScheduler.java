@@ -11,16 +11,13 @@ public class FeedbackRRScheduler extends AbstractScheduler {
   private PriorityQueue<Process> readyQueue;
   private int timeQuantum;
 
-  public FeedbackRRScheduler() {
+  public void initialize(Properties parameters) {
+    timeQuantum = Integer.parseInt(parameters.getProperty("timeQuantum"));
     readyQueue = new PriorityQueue<>(new Comparator<Process>() {
       public int compare(Process p1, Process p2) {
         return Integer.compare(p1.getPriority(), p2.getPriority());
       }
     });
-  }
-
-  public void initialize(Properties parameters) {
-    timeQuantum = Integer.parseInt(parameters.getProperty("timeQuantum"));
   }
 
   /**
@@ -44,11 +41,11 @@ public class FeedbackRRScheduler extends AbstractScheduler {
     return readyQueue.poll();
   }
 
-  public boolean isPreemptive() {
-    return true;
-  }
-
   public int getTimeQuantum() {
     return timeQuantum;
+  }
+
+  public boolean isPreemptive() {
+    return true;
   }
 }
