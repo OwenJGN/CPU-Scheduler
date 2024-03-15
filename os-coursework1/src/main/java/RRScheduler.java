@@ -28,12 +28,11 @@ public class RRScheduler extends AbstractScheduler {
       readyQueue.offer(process);
   }
   /**
-   * Removes the next process to be run from the ready queue 
-   * and returns it. 
+   * Removes the next process to be run from the ready queue
+   * and returns it.
    * Returns null if there is no process to run.
    */
   public Process schedule() {
-    System.out.println("Scheduler selects process "+readyQueue.peek());
     return readyQueue.poll();
   }
 

@@ -29,8 +29,10 @@ public class FeedbackRRScheduler extends AbstractScheduler {
    * after having fully used its time quantum.
    */
   public void ready(Process process, boolean usedFullTimeQuantum) {
-    if(usedFullTimeQuantum){ process.setPriority(process.getPriority()+1); }
-    readyQueue.add(process);
+    if(usedFullTimeQuantum){
+      process.setPriority(process.getPriority()+1);
+    }
+    readyQueue.offer(process);
   }
 
   /**
@@ -39,7 +41,6 @@ public class FeedbackRRScheduler extends AbstractScheduler {
    * Returns null if there is no process to run.
    */
   public Process schedule() {
-    System.out.println("Scheduler selects process " + readyQueue.peek());
     return readyQueue.poll();
   }
 

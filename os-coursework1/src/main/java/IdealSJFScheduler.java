@@ -23,16 +23,18 @@ public class IdealSJFScheduler extends AbstractScheduler {
    * after having fully used its time quantum.
    */
   public void ready(Process process, boolean usedFullTimeQuantum) {
-      readyQueue.add(process);
+      readyQueue.offer(process);
   }
 
   /**
-   * Removes the next process to be run from the ready queue 
-   * and returns it. 
+   * Removes the next process to be run from the ready queue
+   * and returns it.
    * Returns null if there is no process to run.
    */
   public Process schedule() {
       return readyQueue.poll();
-    }
+  }
+
+  public boolean isPreemptive(){ return false; }
 
 }
