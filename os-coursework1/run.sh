@@ -23,27 +23,6 @@ readonly local EXPERIMENT_1_SIMULATOR_PARAMS=(10000 1 5 5 0.5 false)
 readonly local EXPERIMENT_2_SIMULATOR_PARAMS=(5000 10 4 14 0.5 false)
 readonly local EXPERIMENT_3_SIMULATOR_PARAMS=(5000 10 20 30 0.7 false)
 
-# Define input parameters
-EXPERIMENT_SEEDS=(
-    50 100 200 531 120
-    1234 5678 91011 121314 151617
-    5124 6789 1234 5678 91011
-)
-
-# Input parameters details
-INPUT_PARAMS=(
-    "50 0 12 10 10 6"
-    "25 0 12 4 24 10"
-    "30 0 20 5 35 4"
-)
-
-# Simulator parameters
-SIM_PARAMS=(
-    "10000 1 5 5 0.5 false"
-    "5000 10 4 14 0.5 false"
-    "5000 10 20 30 0.7 false"
-)
-
 ### receives input parameters in form of: (file_to_write_to, number_of_processes, static_priority, mean_inter_arrival, mean_cpu_burst, mean_io_burst, mean_number_bursts, seed)
 write_input_params() {
 	local file_name=$1
