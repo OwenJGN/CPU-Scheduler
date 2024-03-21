@@ -145,8 +145,7 @@ run_experiment() {
 		write_simulator_parameters $sim_params_file $scheduler $sim_params
 
 		for seed in ${seeds[@]}; do
-			local input_data_file="$folder/input_files/input_data_$seed.in"
-
+			local input_data_file="$folder/input_files/input-seed_$seed.in"
 			echo "----------- Running with seed: $seed... -----------"
 			run_simulation $sim_params_file $input_data_file "$folder/scheduler_outputs/$scheduler/output-seed_$seed.out"
 			echo "------- Finished Running $scheduler --------"
@@ -160,7 +159,6 @@ main() {
 	run_experiment 1
 	run_experiment 2
 	run_experiment 3
-
 }
 
 main
