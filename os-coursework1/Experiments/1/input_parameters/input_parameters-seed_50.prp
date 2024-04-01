@@ -1,7 +1,7 @@
-numberOfProcesses=50
+numberOfProcesses=100
 staticPriority=0
-meanInterArrival=12
-meanCpuBurst=10
-meanIoBurst=10
-meanNumberBursts=6
+meanInterArrival=10
+meanCpuBurst=50
+meanIoBurst=20
+meanNumberBursts=5
 seed=50
