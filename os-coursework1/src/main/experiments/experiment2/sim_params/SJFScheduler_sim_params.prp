@@ -1,7 +1,0 @@
-scheduler=SJFScheduler
-timeLimit=5000,10,4,14,0.5,false 1234 5678 91011 121314 151617
-interruptTime=
-timeQuantum=
-initialBurstEstimate=
-alphaBurstEstimate=
-periodic=

@@ -1,7 +1,0 @@
-numberOfProcesses=30,0,20,5,35,4
-staticPriority=
-meanInterArrival=
-meanCpuBurst=
-meanIoBurst=
-meanNumberBursts=
-seed=91011

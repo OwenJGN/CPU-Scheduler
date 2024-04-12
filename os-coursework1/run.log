@@ -1,216 +1,201 @@
+
 Running Experiment 1
-written input parameters to Experimen/1/input_parameters/input_parameters-seed_50.prp
-generated input data in Experimen/1/input_files/input-seed_50.in
-written input parameters to Experimen/1/input_parameters/input_parameters-seed_100.prp
-generated input data in Experimen/1/input_files/input-seed_100.in
-written input parameters to Experimen/1/input_parameters/input_parameters-seed_200.prp
-generated input data in Experimen/1/input_files/input-seed_200.in
-written input parameters to Experimen/1/input_parameters/input_parameters-seed_531.prp
-generated input data in Experimen/1/input_files/input-seed_531.in
-written input parameters to Experimen/1/input_parameters/input_parameters-seed_120.prp
-generated input data in Experimen/1/input_files/input-seed_120.in
------------ Running RRScheduler -----------
-written simulator parameters to Experimen/1/simulator_parameters/RRScheduler_simulator_parameters.prp
------------ Running with seed: 50... -----------
-------- Finished Running RRScheduler --------
------------ Running with seed: 100... -----------
-------- Finished Running RRScheduler --------
------------ Running with seed: 200... -----------
-------- Finished Running RRScheduler --------
------------ Running with seed: 531... -----------
-------- Finished Running RRScheduler --------
------------ Running with seed: 120... -----------
-------- Finished Running RRScheduler --------
------------ Running SJFScheduler -----------
-written simulator parameters to Experimen/1/simulator_parameters/SJFScheduler_simulator_parameters.prp
------------ Running with seed: 50... -----------
-------- Finished Running SJFScheduler --------
------------ Running with seed: 100... -----------
-------- Finished Running SJFScheduler --------
------------ Running with seed: 200... -----------
-------- Finished Running SJFScheduler --------
------------ Running with seed: 531... -----------
-------- Finished Running SJFScheduler --------
------------ Running with seed: 120... -----------
-------- Finished Running SJFScheduler --------
------------ Running FcfsScheduler -----------
-written simulator parameters to Experimen/1/simulator_parameters/FcfsScheduler_simulator_parameters.prp
------------ Running with seed: 50... -----------
-------- Finished Running FcfsScheduler --------
------------ Running with seed: 100... -----------
-------- Finished Running FcfsScheduler --------
------------ Running with seed: 200... -----------
-------- Finished Running FcfsScheduler --------
------------ Running with seed: 531... -----------
-------- Finished Running FcfsScheduler --------
------------ Running with seed: 120... -----------
-------- Finished Running FcfsScheduler --------
------------ Running FeedbackRRScheduler -----------
-written simulator parameters to Experimen/1/simulator_parameters/FeedbackRRScheduler_simulator_parameters.prp
------------ Running with seed: 50... -----------
-------- Finished Running FeedbackRRScheduler --------
------------ Running with seed: 100... -----------
-------- Finished Running FeedbackRRScheduler --------
------------ Running with seed: 200... -----------
-------- Finished Running FeedbackRRScheduler --------
------------ Running with seed: 531... -----------
-------- Finished Running FeedbackRRScheduler --------
------------ Running with seed: 120... -----------
-------- Finished Running FeedbackRRScheduler --------
------------ Running IdealSJFScheduler -----------
-written simulator parameters to Experimen/1/simulator_parameters/IdealSJFScheduler_simulator_parameters.prp
------------ Running with seed: 50... -----------
-------- Finished Running IdealSJFScheduler --------
------------ Running with seed: 100... -----------
-------- Finished Running IdealSJFScheduler --------
------------ Running with seed: 200... -----------
-------- Finished Running IdealSJFScheduler --------
------------ Running with seed: 531... -----------
-------- Finished Running IdealSJFScheduler --------
------------ Running with seed: 120... -----------
-------- Finished Running IdealSJFScheduler --------
----------------------------------------------------
+
+Input parameters written in Experiments/1/input_parameters/input_parameters-seed_12382.prp
+Input data written in Experiments/1/input_files/input-seed_12382.in
+Simulator data written in Experiments/1/simulator_parameters/RRScheduler_simulator_parameters.prp
+Output data written in Experiments/1/scheduler_outputs/RRScheduler/output-seed_12382.out
+Simulator data written in Experiments/1/simulator_parameters/SJFScheduler_simulator_parameters.prp
+Output data written in Experiments/1/scheduler_outputs/SJFScheduler/output-seed_12382.out
+Simulator data written in Experiments/1/simulator_parameters/FcfsScheduler_simulator_parameters.prp
+Output data written in Experiments/1/scheduler_outputs/FcfsScheduler/output-seed_12382.out
+Simulator data written in Experiments/1/simulator_parameters/FeedbackRRScheduler_simulator_parameters.prp
+Output data written in Experiments/1/scheduler_outputs/FeedbackRRScheduler/output-seed_12382.out
+Simulator data written in Experiments/1/simulator_parameters/IdealSJFScheduler_simulator_parameters.prp
+Output data written in Experiments/1/scheduler_outputs/IdealSJFScheduler/output-seed_12382.out
+
+Input parameters written in Experiments/1/input_parameters/input_parameters-seed_68846.prp
+Input data written in Experiments/1/input_files/input-seed_68846.in
+Simulator data written in Experiments/1/simulator_parameters/RRScheduler_simulator_parameters.prp
+Output data written in Experiments/1/scheduler_outputs/RRScheduler/output-seed_68846.out
+Simulator data written in Experiments/1/simulator_parameters/SJFScheduler_simulator_parameters.prp
+Output data written in Experiments/1/scheduler_outputs/SJFScheduler/output-seed_68846.out
+Simulator data written in Experiments/1/simulator_parameters/FcfsScheduler_simulator_parameters.prp
+Output data written in Experiments/1/scheduler_outputs/FcfsScheduler/output-seed_68846.out
+Simulator data written in Experiments/1/simulator_parameters/FeedbackRRScheduler_simulator_parameters.prp
+Output data written in Experiments/1/scheduler_outputs/FeedbackRRScheduler/output-seed_68846.out
+Simulator data written in Experiments/1/simulator_parameters/IdealSJFScheduler_simulator_parameters.prp
+Output data written in Experiments/1/scheduler_outputs/IdealSJFScheduler/output-seed_68846.out
+
+Input parameters written in Experiments/1/input_parameters/input_parameters-seed_82050.prp
+Input data written in Experiments/1/input_files/input-seed_82050.in
+Simulator data written in Experiments/1/simulator_parameters/RRScheduler_simulator_parameters.prp
+Output data written in Experiments/1/scheduler_outputs/RRScheduler/output-seed_82050.out
+Simulator data written in Experiments/1/simulator_parameters/SJFScheduler_simulator_parameters.prp
+Output data written in Experiments/1/scheduler_outputs/SJFScheduler/output-seed_82050.out
+Simulator data written in Experiments/1/simulator_parameters/FcfsScheduler_simulator_parameters.prp
+Output data written in Experiments/1/scheduler_outputs/FcfsScheduler/output-seed_82050.out
+Simulator data written in Experiments/1/simulator_parameters/FeedbackRRScheduler_simulator_parameters.prp
+Output data written in Experiments/1/scheduler_outputs/FeedbackRRScheduler/output-seed_82050.out
+Simulator data written in Experiments/1/simulator_parameters/IdealSJFScheduler_simulator_parameters.prp
+Output data written in Experiments/1/scheduler_outputs/IdealSJFScheduler/output-seed_82050.out
+
+Input parameters written in Experiments/1/input_parameters/input_parameters-seed_5112.prp
+Input data written in Experiments/1/input_files/input-seed_5112.in
+Simulator data written in Experiments/1/simulator_parameters/RRScheduler_simulator_parameters.prp
+Output data written in Experiments/1/scheduler_outputs/RRScheduler/output-seed_5112.out
+Simulator data written in Experiments/1/simulator_parameters/SJFScheduler_simulator_parameters.prp
+Output data written in Experiments/1/scheduler_outputs/SJFScheduler/output-seed_5112.out
+Simulator data written in Experiments/1/simulator_parameters/FcfsScheduler_simulator_parameters.prp
+Output data written in Experiments/1/scheduler_outputs/FcfsScheduler/output-seed_5112.out
+Simulator data written in Experiments/1/simulator_parameters/FeedbackRRScheduler_simulator_parameters.prp
+Output data written in Experiments/1/scheduler_outputs/FeedbackRRScheduler/output-seed_5112.out
+Simulator data written in Experiments/1/simulator_parameters/IdealSJFScheduler_simulator_parameters.prp
+Output data written in Experiments/1/scheduler_outputs/IdealSJFScheduler/output-seed_5112.out
+
+Input parameters written in Experiments/1/input_parameters/input_parameters-seed_97108.prp
+Input data written in Experiments/1/input_files/input-seed_97108.in
+Simulator data written in Experiments/1/simulator_parameters/RRScheduler_simulator_parameters.prp
+Output data written in Experiments/1/scheduler_outputs/RRScheduler/output-seed_97108.out
+Simulator data written in Experiments/1/simulator_parameters/SJFScheduler_simulator_parameters.prp
+Output data written in Experiments/1/scheduler_outputs/SJFScheduler/output-seed_97108.out
+Simulator data written in Experiments/1/simulator_parameters/FcfsScheduler_simulator_parameters.prp
+Output data written in Experiments/1/scheduler_outputs/FcfsScheduler/output-seed_97108.out
+Simulator data written in Experiments/1/simulator_parameters/FeedbackRRScheduler_simulator_parameters.prp
+Output data written in Experiments/1/scheduler_outputs/FeedbackRRScheduler/output-seed_97108.out
+Simulator data written in Experiments/1/simulator_parameters/IdealSJFScheduler_simulator_parameters.prp
+Output data written in Experiments/1/scheduler_outputs/IdealSJFScheduler/output-seed_97108.out
+
 Running Experiment 2
-written input parameters to Experimen/2/input_parameters/input_parameters-seed_1234.prp
-generated input data in Experimen/2/input_files/input-seed_1234.in
-written input parameters to Experimen/2/input_parameters/input_parameters-seed_5678.prp
-generated input data in Experimen/2/input_files/input-seed_5678.in
-written input parameters to Experimen/2/input_parameters/input_parameters-seed_91011.prp
-generated input data in Experimen/2/input_files/input-seed_91011.in
-written input parameters to Experimen/2/input_parameters/input_parameters-seed_121314.prp
-generated input data in Experimen/2/input_files/input-seed_121314.in
-written input parameters to Experimen/2/input_parameters/input_parameters-seed_151617.prp
-generated input data in Experimen/2/input_files/input-seed_151617.in
------------ Running RRScheduler -----------
-written simulator parameters to Experimen/2/simulator_parameters/RRScheduler_simulator_parameters.prp
------------ Running with seed: 1234... -----------
-------- Finished Running RRScheduler --------
------------ Running with seed: 5678... -----------
-------- Finished Running RRScheduler --------
------------ Running with seed: 91011... -----------
-------- Finished Running RRScheduler --------
------------ Running with seed: 121314... -----------
-------- Finished Running RRScheduler --------
------------ Running with seed: 151617... -----------
-------- Finished Running RRScheduler --------
------------ Running SJFScheduler -----------
-written simulator parameters to Experimen/2/simulator_parameters/SJFScheduler_simulator_parameters.prp
------------ Running with seed: 1234... -----------
-------- Finished Running SJFScheduler --------
------------ Running with seed: 5678... -----------
-------- Finished Running SJFScheduler --------
------------ Running with seed: 91011... -----------
-------- Finished Running SJFScheduler --------
------------ Running with seed: 121314... -----------
-------- Finished Running SJFScheduler --------
------------ Running with seed: 151617... -----------
-------- Finished Running SJFScheduler --------
------------ Running FcfsScheduler -----------
-written simulator parameters to Experimen/2/simulator_parameters/FcfsScheduler_simulator_parameters.prp
------------ Running with seed: 1234... -----------
-------- Finished Running FcfsScheduler --------
------------ Running with seed: 5678... -----------
-------- Finished Running FcfsScheduler --------
------------ Running with seed: 91011... -----------
-------- Finished Running FcfsScheduler --------
------------ Running with seed: 121314... -----------
-------- Finished Running FcfsScheduler --------
------------ Running with seed: 151617... -----------
-------- Finished Running FcfsScheduler --------
------------ Running FeedbackRRScheduler -----------
-written simulator parameters to Experimen/2/simulator_parameters/FeedbackRRScheduler_simulator_parameters.prp
------------ Running with seed: 1234... -----------
-------- Finished Running FeedbackRRScheduler --------
------------ Running with seed: 5678... -----------
-------- Finished Running FeedbackRRScheduler --------
------------ Running with seed: 91011... -----------
-------- Finished Running FeedbackRRScheduler --------
------------ Running with seed: 121314... -----------
-------- Finished Running FeedbackRRScheduler --------
------------ Running with seed: 151617... -----------
-------- Finished Running FeedbackRRScheduler --------
------------ Running IdealSJFScheduler -----------
-written simulator parameters to Experimen/2/simulator_parameters/IdealSJFScheduler_simulator_parameters.prp
------------ Running with seed: 1234... -----------
-------- Finished Running IdealSJFScheduler --------
------------ Running with seed: 5678... -----------
-------- Finished Running IdealSJFScheduler --------
------------ Running with seed: 91011... -----------
-------- Finished Running IdealSJFScheduler --------
------------ Running with seed: 121314... -----------
-------- Finished Running IdealSJFScheduler --------
------------ Running with seed: 151617... -----------
-------- Finished Running IdealSJFScheduler --------
----------------------------------------------------
+
+Input parameters written in Experiments/2/input_parameters/input_parameters-seed_11654.prp
+Input data written in Experiments/2/input_files/input-seed_11654.in
+Simulator data written in Experiments/2/simulator_parameters/RRScheduler_simulator_parameters.prp
+Output data written in Experiments/2/scheduler_outputs/RRScheduler/output-seed_11654.out
+Simulator data written in Experiments/2/simulator_parameters/SJFScheduler_simulator_parameters.prp
+Output data written in Experiments/2/scheduler_outputs/SJFScheduler/output-seed_11654.out
+Simulator data written in Experiments/2/simulator_parameters/FcfsScheduler_simulator_parameters.prp
+Output data written in Experiments/2/scheduler_outputs/FcfsScheduler/output-seed_11654.out
+Simulator data written in Experiments/2/simulator_parameters/FeedbackRRScheduler_simulator_parameters.prp
+Output data written in Experiments/2/scheduler_outputs/FeedbackRRScheduler/output-seed_11654.out
+Simulator data written in Experiments/2/simulator_parameters/IdealSJFScheduler_simulator_parameters.prp
+Output data written in Experiments/2/scheduler_outputs/IdealSJFScheduler/output-seed_11654.out
+
+Input parameters written in Experiments/2/input_parameters/input_parameters-seed_93333.prp
+Input data written in Experiments/2/input_files/input-seed_93333.in
+Simulator data written in Experiments/2/simulator_parameters/RRScheduler_simulator_parameters.prp
+Output data written in Experiments/2/scheduler_outputs/RRScheduler/output-seed_93333.out
+Simulator data written in Experiments/2/simulator_parameters/SJFScheduler_simulator_parameters.prp
+Output data written in Experiments/2/scheduler_outputs/SJFScheduler/output-seed_93333.out
+Simulator data written in Experiments/2/simulator_parameters/FcfsScheduler_simulator_parameters.prp
+Output data written in Experiments/2/scheduler_outputs/FcfsScheduler/output-seed_93333.out
+Simulator data written in Experiments/2/simulator_parameters/FeedbackRRScheduler_simulator_parameters.prp
+Output data written in Experiments/2/scheduler_outputs/FeedbackRRScheduler/output-seed_93333.out
+Simulator data written in Experiments/2/simulator_parameters/IdealSJFScheduler_simulator_parameters.prp
+Output data written in Experiments/2/scheduler_outputs/IdealSJFScheduler/output-seed_93333.out
+
+Input parameters written in Experiments/2/input_parameters/input_parameters-seed_24870.prp
+Input data written in Experiments/2/input_files/input-seed_24870.in
+Simulator data written in Experiments/2/simulator_parameters/RRScheduler_simulator_parameters.prp
+Output data written in Experiments/2/scheduler_outputs/RRScheduler/output-seed_24870.out
+Simulator data written in Experiments/2/simulator_parameters/SJFScheduler_simulator_parameters.prp
+Output data written in Experiments/2/scheduler_outputs/SJFScheduler/output-seed_24870.out
+Simulator data written in Experiments/2/simulator_parameters/FcfsScheduler_simulator_parameters.prp
+Output data written in Experiments/2/scheduler_outputs/FcfsScheduler/output-seed_24870.out
+Simulator data written in Experiments/2/simulator_parameters/FeedbackRRScheduler_simulator_parameters.prp
+Output data written in Experiments/2/scheduler_outputs/FeedbackRRScheduler/output-seed_24870.out
+Simulator data written in Experiments/2/simulator_parameters/IdealSJFScheduler_simulator_parameters.prp
+Output data written in Experiments/2/scheduler_outputs/IdealSJFScheduler/output-seed_24870.out
+
+Input parameters written in Experiments/2/input_parameters/input_parameters-seed_8621.prp
+Input data written in Experiments/2/input_files/input-seed_8621.in
+Simulator data written in Experiments/2/simulator_parameters/RRScheduler_simulator_parameters.prp
+Output data written in Experiments/2/scheduler_outputs/RRScheduler/output-seed_8621.out
+Simulator data written in Experiments/2/simulator_parameters/SJFScheduler_simulator_parameters.prp
+Output data written in Experiments/2/scheduler_outputs/SJFScheduler/output-seed_8621.out
+Simulator data written in Experiments/2/simulator_parameters/FcfsScheduler_simulator_parameters.prp
+Output data written in Experiments/2/scheduler_outputs/FcfsScheduler/output-seed_8621.out
+Simulator data written in Experiments/2/simulator_parameters/FeedbackRRScheduler_simulator_parameters.prp
+Output data written in Experiments/2/scheduler_outputs/FeedbackRRScheduler/output-seed_8621.out
+Simulator data written in Experiments/2/simulator_parameters/IdealSJFScheduler_simulator_parameters.prp
+Output data written in Experiments/2/scheduler_outputs/IdealSJFScheduler/output-seed_8621.out
+
+Input parameters written in Experiments/2/input_parameters/input_parameters-seed_10291.prp
+Input data written in Experiments/2/input_files/input-seed_10291.in
+Simulator data written in Experiments/2/simulator_parameters/RRScheduler_simulator_parameters.prp
+Output data written in Experiments/2/scheduler_outputs/RRScheduler/output-seed_10291.out
+Simulator data written in Experiments/2/simulator_parameters/SJFScheduler_simulator_parameters.prp
+Output data written in Experiments/2/scheduler_outputs/SJFScheduler/output-seed_10291.out
+Simulator data written in Experiments/2/simulator_parameters/FcfsScheduler_simulator_parameters.prp
+Output data written in Experiments/2/scheduler_outputs/FcfsScheduler/output-seed_10291.out
+Simulator data written in Experiments/2/simulator_parameters/FeedbackRRScheduler_simulator_parameters.prp
+Output data written in Experiments/2/scheduler_outputs/FeedbackRRScheduler/output-seed_10291.out
+Simulator data written in Experiments/2/simulator_parameters/IdealSJFScheduler_simulator_parameters.prp
+Output data written in Experiments/2/scheduler_outputs/IdealSJFScheduler/output-seed_10291.out
+
 Running Experiment 3
-written input parameters to Experimen/3/input_parameters/input_parameters-seed_5124.prp
-generated input data in Experimen/3/input_files/input-seed_5124.in
-written input parameters to Experimen/3/input_parameters/input_parameters-seed_6789.prp
-generated input data in Experimen/3/input_files/input-seed_6789.in
-written input parameters to Experimen/3/input_parameters/input_parameters-seed_1234.prp
-generated input data in Experimen/3/input_files/input-seed_1234.in
-written input parameters to Experimen/3/input_parameters/input_parameters-seed_5678.prp
-generated input data in Experimen/3/input_files/input-seed_5678.in
-written input parameters to Experimen/3/input_parameters/input_parameters-seed_91011.prp
-generated input data in Experimen/3/input_files/input-seed_91011.in
------------ Running RRScheduler -----------
-written simulator parameters to Experimen/3/simulator_parameters/RRScheduler_simulator_parameters.prp
------------ Running with seed: 5124... -----------
-------- Finished Running RRScheduler --------
------------ Running with seed: 6789... -----------
-------- Finished Running RRScheduler --------
------------ Running with seed: 1234... -----------
-------- Finished Running RRScheduler --------
------------ Running with seed: 5678... -----------
-------- Finished Running RRScheduler --------
------------ Running with seed: 91011... -----------
-------- Finished Running RRScheduler --------
------------ Running SJFScheduler -----------
-written simulator parameters to Experimen/3/simulator_parameters/SJFScheduler_simulator_parameters.prp
------------ Running with seed: 5124... -----------
-------- Finished Running SJFScheduler --------
------------ Running with seed: 6789... -----------
-------- Finished Running SJFScheduler --------
------------ Running with seed: 1234... -----------
-------- Finished Running SJFScheduler --------
------------ Running with seed: 5678... -----------
-------- Finished Running SJFScheduler --------
------------ Running with seed: 91011... -----------
-------- Finished Running SJFScheduler --------
------------ Running FcfsScheduler -----------
-written simulator parameters to Experimen/3/simulator_parameters/FcfsScheduler_simulator_parameters.prp
------------ Running with seed: 5124... -----------
-------- Finished Running FcfsScheduler --------
------------ Running with seed: 6789... -----------
-------- Finished Running FcfsScheduler --------
------------ Running with seed: 1234... -----------
-------- Finished Running FcfsScheduler --------
------------ Running with seed: 5678... -----------
-------- Finished Running FcfsScheduler --------
------------ Running with seed: 91011... -----------
-------- Finished Running FcfsScheduler --------
------------ Running FeedbackRRScheduler -----------
-written simulator parameters to Experimen/3/simulator_parameters/FeedbackRRScheduler_simulator_parameters.prp
------------ Running with seed: 5124... -----------
-------- Finished Running FeedbackRRScheduler --------
------------ Running with seed: 6789... -----------
-------- Finished Running FeedbackRRScheduler --------
------------ Running with seed: 1234... -----------
-------- Finished Running FeedbackRRScheduler --------
------------ Running with seed: 5678... -----------
-------- Finished Running FeedbackRRScheduler --------
------------ Running with seed: 91011... -----------
-------- Finished Running FeedbackRRScheduler --------
------------ Running IdealSJFScheduler -----------
-written simulator parameters to Experimen/3/simulator_parameters/IdealSJFScheduler_simulator_parameters.prp
------------ Running with seed: 5124... -----------
-------- Finished Running IdealSJFScheduler --------
------------ Running with seed: 6789... -----------
-------- Finished Running IdealSJFScheduler --------
------------ Running with seed: 1234... -----------
-------- Finished Running IdealSJFScheduler --------
------------ Running with seed: 5678... -----------
-------- Finished Running IdealSJFScheduler --------
------------ Running with seed: 91011... -----------
-------- Finished Running IdealSJFScheduler --------
----------------------------------------------------
+
+Input parameters written in Experiments/3/input_parameters/input_parameters-seed_80253.prp
+Input data written in Experiments/3/input_files/input-seed_80253.in
+Simulator data written in Experiments/3/simulator_parameters/RRScheduler_simulator_parameters.prp
+Output data written in Experiments/3/scheduler_outputs/RRScheduler/output-seed_80253.out
+Simulator data written in Experiments/3/simulator_parameters/SJFScheduler_simulator_parameters.prp
+Output data written in Experiments/3/scheduler_outputs/SJFScheduler/output-seed_80253.out
+Simulator data written in Experiments/3/simulator_parameters/FcfsScheduler_simulator_parameters.prp
+Output data written in Experiments/3/scheduler_outputs/FcfsScheduler/output-seed_80253.out
+Simulator data written in Experiments/3/simulator_parameters/FeedbackRRScheduler_simulator_parameters.prp
+Output data written in Experiments/3/scheduler_outputs/FeedbackRRScheduler/output-seed_80253.out
+Simulator data written in Experiments/3/simulator_parameters/IdealSJFScheduler_simulator_parameters.prp
+Output data written in Experiments/3/scheduler_outputs/IdealSJFScheduler/output-seed_80253.out
+
+Input parameters written in Experiments/3/input_parameters/input_parameters-seed_41649.prp
+Input data written in Experiments/3/input_files/input-seed_41649.in
+Simulator data written in Experiments/3/simulator_parameters/RRScheduler_simulator_parameters.prp
+Output data written in Experiments/3/scheduler_outputs/RRScheduler/output-seed_41649.out
+Simulator data written in Experiments/3/simulator_parameters/SJFScheduler_simulator_parameters.prp
+Output data written in Experiments/3/scheduler_outputs/SJFScheduler/output-seed_41649.out
+Simulator data written in Experiments/3/simulator_parameters/FcfsScheduler_simulator_parameters.prp
+Output data written in Experiments/3/scheduler_outputs/FcfsScheduler/output-seed_41649.out
+Simulator data written in Experiments/3/simulator_parameters/FeedbackRRScheduler_simulator_parameters.prp
+Output data written in Experiments/3/scheduler_outputs/FeedbackRRScheduler/output-seed_41649.out
+Simulator data written in Experiments/3/simulator_parameters/IdealSJFScheduler_simulator_parameters.prp
+Output data written in Experiments/3/scheduler_outputs/IdealSJFScheduler/output-seed_41649.out
+
+Input parameters written in Experiments/3/input_parameters/input_parameters-seed_72592.prp
+Input data written in Experiments/3/input_files/input-seed_72592.in
+Simulator data written in Experiments/3/simulator_parameters/RRScheduler_simulator_parameters.prp
+Output data written in Experiments/3/scheduler_outputs/RRScheduler/output-seed_72592.out
+Simulator data written in Experiments/3/simulator_parameters/SJFScheduler_simulator_parameters.prp
+Output data written in Experiments/3/scheduler_outputs/SJFScheduler/output-seed_72592.out
+Simulator data written in Experiments/3/simulator_parameters/FcfsScheduler_simulator_parameters.prp
+Output data written in Experiments/3/scheduler_outputs/FcfsScheduler/output-seed_72592.out
+Simulator data written in Experiments/3/simulator_parameters/FeedbackRRScheduler_simulator_parameters.prp
+Output data written in Experiments/3/scheduler_outputs/FeedbackRRScheduler/output-seed_72592.out
+Simulator data written in Experiments/3/simulator_parameters/IdealSJFScheduler_simulator_parameters.prp
+Output data written in Experiments/3/scheduler_outputs/IdealSJFScheduler/output-seed_72592.out
+
+Input parameters written in Experiments/3/input_parameters/input_parameters-seed_7885.prp
+Input data written in Experiments/3/input_files/input-seed_7885.in
+Simulator data written in Experiments/3/simulator_parameters/RRScheduler_simulator_parameters.prp
+Output data written in Experiments/3/scheduler_outputs/RRScheduler/output-seed_7885.out
+Simulator data written in Experiments/3/simulator_parameters/SJFScheduler_simulator_parameters.prp
+Output data written in Experiments/3/scheduler_outputs/SJFScheduler/output-seed_7885.out
+Simulator data written in Experiments/3/simulator_parameters/FcfsScheduler_simulator_parameters.prp
+Output data written in Experiments/3/scheduler_outputs/FcfsScheduler/output-seed_7885.out
+Simulator data written in Experiments/3/simulator_parameters/FeedbackRRScheduler_simulator_parameters.prp
+Output data written in Experiments/3/scheduler_outputs/FeedbackRRScheduler/output-seed_7885.out
+Simulator data written in Experiments/3/simulator_parameters/IdealSJFScheduler_simulator_parameters.prp
+Output data written in Experiments/3/scheduler_outputs/IdealSJFScheduler/output-seed_7885.out
+
+Input parameters written in Experiments/3/input_parameters/input_parameters-seed_36334.prp
+Input data written in Experiments/3/input_files/input-seed_36334.in
+Simulator data written in Experiments/3/simulator_parameters/RRScheduler_simulator_parameters.prp
+Output data written in Experiments/3/scheduler_outputs/RRScheduler/output-seed_36334.out
+Simulator data written in Experiments/3/simulator_parameters/SJFScheduler_simulator_parameters.prp
+Output data written in Experiments/3/scheduler_outputs/SJFScheduler/output-seed_36334.out
+Simulator data written in Experiments/3/simulator_parameters/FcfsScheduler_simulator_parameters.prp
+Output data written in Experiments/3/scheduler_outputs/FcfsScheduler/output-seed_36334.out
+Simulator data written in Experiments/3/simulator_parameters/FeedbackRRScheduler_simulator_parameters.prp
+Output data written in Experiments/3/scheduler_outputs/FeedbackRRScheduler/output-seed_36334.out
+Simulator data written in Experiments/3/simulator_parameters/IdealSJFScheduler_simulator_parameters.prp
+Output data written in Experiments/3/scheduler_outputs/IdealSJFScheduler/output-seed_36334.out

@@ -1,164 +1,89 @@
-#!/bin/bash
+RUN="java -cp target/classes"
+SCHEDULERS=(
+	RRScheduler 
+	SJFScheduler 
+	FcfsScheduler 
+	FeedbackRRScheduler 
+	IdealSJFScheduler
+)
 
-## constants
-readonly local RUN="java -cp target/classes"
-readonly local SCHEDULERS=(RRScheduler SJFScheduler FcfsScheduler FeedbackRRScheduler IdealSJFScheduler)
-readonly local LINE="---------------------------------------------------"
-
-## input parameters
-readonly local SEEDS_PER_EXPERIMENT=5
-readonly local EXPERIMENT_1_SEEDS=(50 100 200 531 120)
-readonly local EXPERIMENT_2_SEEDS=(1234 5678 91011 121314 151617)
-readonly local EXPERIMENT_3_SEEDS=(5124 6789 1234 5678 91011)
-
-## input parameters
-## (number_of_processes, static_priority, mean_inter_arrival, mean_cpu_burst, mean_io_burst, mean_number_bursts)
-readonly local EXPERIMENT_1_INPUT_PARAMS=(50 0 12 10 10 6)
-readonly local EXPERIMENT_2_INPUT_PARAMS=(25 0 12 4 24 10)
-readonly local EXPERIMENT_3_INPUT_PARAMS=(30 0 20 5 35 4)
-
-## simulator parameters (excluding scheduling algorithm)
-# (time_limit, interrupt_time, time_quantum, initial_burst_estimate, alpha_burst_estimate, periodic)
-readonly local EXPERIMENT_1_SIMULATOR_PARAMS=(10000 1 5 5 0.5 false)
-readonly local EXPERIMENT_2_SIMULATOR_PARAMS=(5000 10 4 14 0.5 false)
-readonly local EXPERIMENT_3_SIMULATOR_PARAMS=(5000 10 20 30 0.7 false)
-
-# Define input parameters
 EXPERIMENT_SEEDS=(
-    50 100 200 531 120
-    1234 5678 91011 121314 151617
-    5124 6789 1234 5678 91011
+    "12382 68846 82050 5112 97108"
+    "11654 93333 24870 8621 10291"
+    "80253 41649 72592 7885 36334"
 )
 
-# Input parameters details
-INPUT_PARAMS=(
-    "50 0 12 10 10 6"
-    "25 0 12 4 24 10"
-    "30 0 20 5 35 4"
+EXPERIMENT_PARAMS=(
+    "500 0 10 30 20 5"
+    "100 0 12 40 20 5"
+    "50 0 12 10 10 12"
 )
 
-# Simulator parameters
-SIM_PARAMS=(
-    "10000 1 5 5 0.5 false"
-    "5000 10 4 14 0.5 false"
-    "5000 10 20 30 0.7 false"
+EXPERIMENT_SIM_PARAMS=(
+    "40000 1 12 30 0.5 false"
+    "10000 5 15 40 0.5 false"
+    "10000 1 5 10 0.5 false"
 )
 
-### receives input parameters in form of: (file_to_write_to, number_of_processes, static_priority, mean_inter_arrival, mean_cpu_burst, mean_io_burst, mean_number_bursts, seed)
-write_input_params() {
-	local file_name=$1
-	local number_of_processes=$2
-	local static_priority=$3
-	local mean_inter_arrival=$4
-	local mean_cpu_burst=$5
-	local mean_io_burst=$6
-	local mean_number_bursts=$7
-	local seed=$8
-
-	local serialized="numberOfProcesses=$number_of_processes\nstaticPriority=$static_priority\nmeanInterArrival=$mean_inter_arrival\nmeanCpuBurst=$mean_cpu_burst\nmeanIoBurst=$mean_io_burst\nmeanNumberBursts=$mean_number_bursts\nseed=$seed"
-
-	printf $serialized >$file_name
-
-	echo "written input parameters to $file_name"
-
+write_input_parameters() {
+    local file_name=$1
+    printf "numberOfProcesses=%s\nstaticPriority=%s\nmeanInterArrival=%s\nmeanCpuBurst=%s\nmeanIoBurst=%s\nmeanNumberBursts=%s\nseed=%s\n" \
+        $2 $3 $4 $5 $6 $7 $8 > "$file_name"
+		
+    echo -e "\nInput parameters written in $file_name"
 }
-
-## generate input data using the parameters file. expects the params in form of: (input_parameters_file, output_file)
-generate_input_data() {
-	local parameters_file=$1
-	local data_file_to_write=$2
-
-	$RUN InputGenerator $parameters_file $data_file_to_write >/dev/null 2>&1
-
-	echo "generated input data in $data_file_to_write"
-}
-
-# writes simulator parameters to a file. receives (file_to_write_to, scheduler_to_use, time_limit, interrupt_time, time_quantum, initial_burst_estimate, alpha_burst_estimate, periodic)
 write_simulator_parameters() {
-	local simulator_parameters_file=$1
-	local scheduler_to_use=$2
-	local time_limit=$3
-	local interrupt_time=$4
-	local time_quantum=$5
-	local initial_burst_estimate=$6
-	local alpha_burst_estimate=$7
-	local periodic=$8
+    local simulator_parameters_file=$1
+	printf "scheduler=%s\ntimeLimit=%s\ninterruptTime=%s\ntimeQuantum=%s\ninitialBurstEstimate=%s\nalphaBurstEstimate=%s\nperiodic=%s\n" \
+        $2 $3 $4 $5 $6 $7 $8 > "$simulator_parameters_file"
 
-	local serialized="scheduler=$scheduler_to_use\ntimeLimit=$time_limit\ninterruptTime=$interrupt_time\ntimeQuantum=$time_quantum\ninitialBurstEstimate=$initial_burst_estimate\nalphaBurstEstimate=$alpha_burst_estimate\nperiodic=$periodic"
+    echo "Simulator data written in $simulator_parameters_file"
+}
+run_inputgenerator() {
+	$RUN InputGenerator $1 $2 >/dev/null 2>&1
 
-	printf $serialized >$simulator_parameters_file
-
-	echo "written simulator parameters to $simulator_parameters_file"
-
+	echo "Input data written in $2"
+}
+run_simulator() {
+	$RUN Simulator $1 $3 $2 >/dev/null 2>&1
+	
+	echo "Output data written in $3"
 }
 
-## runs the simulator with parameters: (simulator_file, input_data_file, output_path)
-run_simulation() {
-	local simulator_parameters_file=$1
-	local input_data_file=$2
-	local output_file=$3
-
-	$RUN Simulator $simulator_parameters_file $output_file $input_data_file >/dev/null 2>&1
-}
-
-## runs a whole experiment, expects a number from 1 to 4 as a parameter
 run_experiment() {
-	local folder="Experimen/$1"
-	echo "Running Experiment $1"
+    experiment_number=$1
+    folder="Experiments/$experiment_number"
+    echo -e "\nRunning Experiment $experiment_number"
 
-	mkdir -p $folder
+    mkdir -p "$folder/input_parameters" "$folder/input_files"
 
-	local input_params
-	local sim_params
-	local seeds
-	if [ $1 -eq 1 ]; then
-		input_params="${EXPERIMENT_1_INPUT_PARAMS[@]}"
-		sim_params="${EXPERIMENT_1_SIMULATOR_PARAMS[@]}"
-		seeds="${EXPERIMENT_1_SEEDS[@]}"
-	elif [ $1 -eq 2 ]; then
-		input_params="${EXPERIMENT_2_INPUT_PARAMS[@]}"
-		sim_params="${EXPERIMENT_2_SIMULATOR_PARAMS[@]}"
-		seeds="${EXPERIMENT_2_SEEDS[@]}"
-	elif [ $1 -eq 3 ]; then
-		input_params="${EXPERIMENT_3_INPUT_PARAMS[@]}"
-		sim_params="${EXPERIMENT_3_SIMULATOR_PARAMS[@]}"
-		seeds="${EXPERIMENT_3_SEEDS[@]}"
-	else
-		echo "Invalid experiment number"
-		exit 1
-	fi
-
-	mkdir -p $folder/input_parameters
-	mkdir -p $folder/input_files
-
-	for seed in ${seeds[@]}; do
-		local data_file="$folder/input_files/input-seed_$seed.in"
-		local input_params_file="$folder/input_parameters/input_parameters-seed_$seed.prp"
-		write_input_params $input_params_file $input_params $seed
-		generate_input_data $input_params_file $data_file
-	done
-
-	for scheduler in "${SCHEDULERS[@]}"; do
-		echo "----------- Running $scheduler -----------"
-		mkdir -p $folder/scheduler_outputs/$scheduler $folder/simulator_parameters
-		local sim_params_file="$folder/simulator_parameters/${scheduler}_simulator_parameters.prp"
-		write_simulator_parameters $sim_params_file $scheduler $sim_params
-
-		for seed in ${seeds[@]}; do
-			local input_data_file="$folder/input_files/input-seed_$seed.in"
-			echo "----------- Running with seed: $seed... -----------"
-			run_simulation $sim_params_file $input_data_file "$folder/scheduler_outputs/$scheduler/output-seed_$seed.out"
-			echo "------- Finished Running $scheduler --------"
+    input_parameters="${EXPERIMENT_PARAMS[$((experiment_number - 1))]}"
+    sim_parameters="${EXPERIMENT_SIM_PARAMS[$((experiment_number - 1))]}"
+    seeds="${EXPERIMENT_SEEDS[$((experiment_number - 1))]}"
+    
+    for seed in ${seeds[@]}; do
+		data_file="$folder/input_files/input-seed_$seed.in"
+		input_params_file="$folder/input_parameters/input_parameters-seed_$seed.prp"
+    
+		write_input_parameters "$input_params_file" "${input_parameters[@]}" "$seed"
+		run_inputgenerator "$input_params_file" "$data_file"
+    
+		for scheduler in "${SCHEDULERS[@]}"; do
+			mkdir -p "$folder/scheduler_outputs/$scheduler" "$folder/simulator_parameters"
+			sim_params_file="$folder/simulator_parameters/${scheduler}_simulator_parameters.prp"
+        
+			write_simulator_parameters "$sim_params_file" "$scheduler" "${sim_parameters[@]}"
+        
+			input_data_file="$folder/input_files/input-seed_$seed.in"
+			run_simulator "$sim_params_file" "$input_data_file" "$folder/scheduler_outputs/$scheduler/output-seed_$seed.out"
 		done
 	done
-
-	echo $LINE
 }
 
 main() {
-	run_experiment 1
-	run_experiment 2
-	run_experiment 3
+    for experiment_number in {1..3}; do
+        run_experiment "$experiment_number"
+    done
 }
 
 main

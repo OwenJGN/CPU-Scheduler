@@ -1,7 +1,7 @@
 scheduler=FeedbackRRScheduler
-timeLimit=10000
+timeLimit=40000
 interruptTime=1
-timeQuantum=5
-initialBurstEstimate=5
+timeQuantum=12
+initialBurstEstimate=30
 alphaBurstEstimate=0.5
 periodic=false
