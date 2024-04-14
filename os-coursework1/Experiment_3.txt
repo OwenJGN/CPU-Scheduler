@@ -1,0 +1,108 @@
+-----------------------------------------------------------
+Current seed: 80253
+Scheduler: FcfsScheduler
+Average Turnaround Time: 2991.8823529411766
+
+Scheduler: RRScheduler
+Average Turnaround Time: 3222.843137254902
+
+Scheduler: SJFScheduler
+Average Turnaround Time: 3090.549019607843
+
+Scheduler: IdealSJFScheduler
+Average Turnaround Time: 2547.0588235294117
+
+Scheduler: FeedbackRRScheduler
+Average Turnaround Time: 3466.9803921568628
+
+-----------------------------------------------------------
+Current seed: 41649
+Scheduler: FcfsScheduler
+Average Turnaround Time: 1619.7254901960785
+
+Scheduler: RRScheduler
+Average Turnaround Time: 1753.0980392156862
+
+Scheduler: SJFScheduler
+Average Turnaround Time: 1588.686274509804
+
+Scheduler: IdealSJFScheduler
+Average Turnaround Time: 1343.6274509803923
+
+Scheduler: FeedbackRRScheduler
+Average Turnaround Time: 1841.686274509804
+
+-----------------------------------------------------------
+Current seed: 72592
+Scheduler: FcfsScheduler
+Average Turnaround Time: 1970.0
+
+Scheduler: RRScheduler
+Average Turnaround Time: 2174.901960784314
+
+Scheduler: SJFScheduler
+Average Turnaround Time: 2159.274509803922
+
+Scheduler: IdealSJFScheduler
+Average Turnaround Time: 1807.5686274509803
+
+Scheduler: FeedbackRRScheduler
+Average Turnaround Time: 2334.4313725490197
+
+-----------------------------------------------------------
+Current seed: 7885
+Scheduler: FcfsScheduler
+Average Turnaround Time: 2283.274509803922
+
+Scheduler: RRScheduler
+Average Turnaround Time: 2488.4117647058824
+
+Scheduler: SJFScheduler
+Average Turnaround Time: 2254.176470588235
+
+Scheduler: IdealSJFScheduler
+Average Turnaround Time: 1907.137254901961
+
+Scheduler: FeedbackRRScheduler
+Average Turnaround Time: 2679.2549019607845
+
+-----------------------------------------------------------
+Current seed: 36334
+Scheduler: FcfsScheduler
+Average Turnaround Time: 1708.862745098039
+
+Scheduler: RRScheduler
+Average Turnaround Time: 1840.1960784313726
+
+Scheduler: SJFScheduler
+Average Turnaround Time: 1685.549019607843
+
+Scheduler: IdealSJFScheduler
+Average Turnaround Time: 1418.1960784313726
+
+Scheduler: FeedbackRRScheduler
+Average Turnaround Time: 1820.313725490196
+
+-----------------------------------------------------------
+
+Overall averages:
+Scheduler: FcfsScheduler
+Average Waiting Time: 267.6078431372549
+Average Turnaround Time: 2114.749019607843
+
+Scheduler: RRScheduler
+Average Waiting Time: 109.39607843137256
+Average Turnaround Time: 2295.8901960784315
+
+Scheduler: SJFScheduler
+Average Waiting Time: 335.54117647058825
+Average Turnaround Time: 2155.6470588235293
+
+Scheduler: IdealSJFScheduler
+Average Waiting Time: 344.3058823529412
+Average Turnaround Time: 1804.7176470588238
+
+Scheduler: FeedbackRRScheduler
+Average Waiting Time: 11.513725490196077
+Average Turnaround Time: 2428.5333333333338
+

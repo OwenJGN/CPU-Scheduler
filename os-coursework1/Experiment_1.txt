@@ -1,0 +1,133 @@
+-----------------------------------------------------------
+Current seed: 12382
+Scheduler: FcfsScheduler
+Average Waiting Time: 7679.478827361563
+Average throughput: 0.007667715670113392
+
+Scheduler: RRScheduler
+Average Waiting Time: 2574.986577181208
+Average throughput: 0.00744869647811633
+
+Scheduler: SJFScheduler
+Average Waiting Time: 13880.477272727272
+Average throughput: 0.007696536558548653
+
+Scheduler: IdealSJFScheduler
+Average Waiting Time: 7006.81954887218
+Average throughput: 0.00996428838998077
+
+Scheduler: FeedbackRRScheduler
+Average Waiting Time: 2409.450171821306
+Average throughput: 0.007274454415918806
+
+-----------------------------------------------------------
+Current seed: 68846
+Scheduler: FcfsScheduler
+Average Waiting Time: 7343.439890710382
+Average throughput: 0.00912354172898594
+
+Scheduler: RRScheduler
+Average Waiting Time: 2444.4079320113315
+Average throughput: 0.008824558772061397
+
+Scheduler: SJFScheduler
+Average Waiting Time: 12152.543243243243
+Average throughput: 0.009234532158634288
+
+Scheduler: IdealSJFScheduler
+Average Waiting Time: 6943.165532879819
+Average throughput: 0.010999975056745903
+
+Scheduler: FeedbackRRScheduler
+Average Waiting Time: 2537.382183908046
+Average throughput: 0.0087
+
+-----------------------------------------------------------
+Current seed: 82050
+Scheduler: FcfsScheduler
+Average Waiting Time: 6925.840707964602
+Average throughput: 0.008473940757405323
+
+Scheduler: RRScheduler
+Average Waiting Time: 2514.435975609756
+Average throughput: 0.008199590020498975
+
+Scheduler: SJFScheduler
+Average Waiting Time: 13274.372434017596
+Average throughput: 0.008515632803915693
+
+Scheduler: IdealSJFScheduler
+Average Waiting Time: 6948.920481927711
+Average throughput: 0.010365153104550677
+
+Scheduler: FeedbackRRScheduler
+Average Waiting Time: 2951.9773462783173
+Average throughput: 0.007724613769311535
+
+-----------------------------------------------------------
+Current seed: 5112
+Scheduler: FcfsScheduler
+Average Waiting Time: 6826.805479452055
+Average throughput: 0.009123859517560305
+
+Scheduler: RRScheduler
+Average Waiting Time: 2428.9117647058824
+Average throughput: 0.008498300339932013
+
+Scheduler: SJFScheduler
+Average Waiting Time: 11996.455840455841
+Average throughput: 0.008774561271936402
+
+Scheduler: IdealSJFScheduler
+Average Waiting Time: 6272.090277777777
+Average throughput: 0.01077951891406328
+
+Scheduler: FeedbackRRScheduler
+Average Waiting Time: 2770.9242424242425
+Average throughput: 0.00825
+
+-----------------------------------------------------------
+Current seed: 97108
+Scheduler: FcfsScheduler
+Average Waiting Time: 7362.483282674772
+Average throughput: 0.00821227097998103
+
+Scheduler: RRScheduler
+Average Waiting Time: 2574.7083333333335
+Average throughput: 0.007798440311937612
+
+Scheduler: SJFScheduler
+Average Waiting Time: 12669.112426035503
+Average throughput: 0.008435448850732486
+
+Scheduler: IdealSJFScheduler
+Average Waiting Time: 6290.764127764128
+Average throughput: 0.010167882482262417
+
+Scheduler: FeedbackRRScheduler
+Average Waiting Time: 2929.802588996764
+Average throughput: 0.007724227577242276
+
+-----------------------------------------------------------
+
+Overall averages:
+Scheduler: FcfsScheduler
+Average Waiting Time: 7227.609637632675
+Average throughput: 0.008520265730809199
+
+Scheduler: RRScheduler
+Average Waiting Time: 2507.4901165683027
+Average throughput: 0.008153917184509266
+
+Scheduler: SJFScheduler
+Average Waiting Time: 12794.59224329589
+Average throughput: 0.008531342328753504
+
+Scheduler: IdealSJFScheduler
+Average Waiting Time: 6692.351993844323
+Average throughput: 0.010455363589520608
+
+Scheduler: FeedbackRRScheduler
+Average Waiting Time: 2719.9073066857354
+Average throughput: 0.007934659152494524
+

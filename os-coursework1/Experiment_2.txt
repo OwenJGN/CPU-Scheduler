@@ -1,0 +1,103 @@
+-----------------------------------------------------------
+Current seed: 11654
+Scheduler: FcfsScheduler
+Average Waiting Time: 2284.4347826086955
+
+Scheduler: RRScheduler
+Average Waiting Time: 801.1162790697674
+
+Scheduler: SJFScheduler
+Average Waiting Time: 3329.490566037736
+
+Scheduler: IdealSJFScheduler
+Average Waiting Time: 1816.3972602739725
+
+Scheduler: FeedbackRRScheduler
+Average Waiting Time: 821.15
+
+-----------------------------------------------------------
+Current seed: 93333
+Scheduler: FcfsScheduler
+Average Waiting Time: 2203.4666666666667
+
+Scheduler: RRScheduler
+Average Waiting Time: 861.3877551020408
+
+Scheduler: SJFScheduler
+Average Waiting Time: 4512.765957446809
+
+Scheduler: IdealSJFScheduler
+Average Waiting Time: 1812.144927536232
+
+Scheduler: FeedbackRRScheduler
+Average Waiting Time: 809.8666666666667
+
+-----------------------------------------------------------
+Current seed: 24870
+Scheduler: FcfsScheduler
+Average Waiting Time: 2231.108108108108
+
+Scheduler: RRScheduler
+Average Waiting Time: 844.2352941176471
+
+Scheduler: SJFScheduler
+Average Waiting Time: 4493.522727272727
+
+Scheduler: IdealSJFScheduler
+Average Waiting Time: 1834.8484848484848
+
+Scheduler: FeedbackRRScheduler
+Average Waiting Time: 1059.84375
+
+-----------------------------------------------------------
+Current seed: 8621
+Scheduler: FcfsScheduler
+Average Waiting Time: 2289.6041666666665
+
+Scheduler: RRScheduler
+Average Waiting Time: 779.0714285714286
+
+Scheduler: SJFScheduler
+Average Waiting Time: 4631.3859649122805
+
+Scheduler: IdealSJFScheduler
+Average Waiting Time: 2048.4714285714285
+
+Scheduler: FeedbackRRScheduler
+Average Waiting Time: 1139.4878048780488
+
+-----------------------------------------------------------
+Current seed: 10291
+Scheduler: FcfsScheduler
+Average Waiting Time: 2419.488888888889
+
+Scheduler: RRScheduler
+Average Waiting Time: 803.6666666666666
+
+Scheduler: SJFScheduler
+Average Waiting Time: 3601.9772727272725
+
+Scheduler: IdealSJFScheduler
+Average Waiting Time: 1641.71875
+
+Scheduler: FeedbackRRScheduler
+Average Waiting Time: 659.3214285714286
+
+-----------------------------------------------------------
+
+Overall averages:
+Scheduler: FcfsScheduler
+Average Waiting Time: 2285.6205225878048
+
+Scheduler: RRScheduler
+Average Waiting Time: 817.8954847055101
+
+Scheduler: SJFScheduler
+Average Waiting Time: 4113.828497679364
+
+Scheduler: IdealSJFScheduler
+Average Waiting Time: 1830.7161702460235
+
+Scheduler: FeedbackRRScheduler
+Average Waiting Time: 897.9339300232289
+
