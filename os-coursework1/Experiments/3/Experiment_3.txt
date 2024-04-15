@@ -87,22 +87,17 @@ Average Turnaround Time: 1820.313725490196
 
 Overall averages:
 Scheduler: FcfsScheduler
-Average Waiting Time: 267.6078431372549
 Average Turnaround Time: 2114.749019607843
 
 Scheduler: RRScheduler
-Average Waiting Time: 109.39607843137256
 Average Turnaround Time: 2295.8901960784315
 
 Scheduler: SJFScheduler
-Average Waiting Time: 335.54117647058825
 Average Turnaround Time: 2155.6470588235293
 
 Scheduler: IdealSJFScheduler
-Average Waiting Time: 344.3058823529412
 Average Turnaround Time: 1804.7176470588238
 
 Scheduler: FeedbackRRScheduler
-Average Waiting Time: 11.513725490196077
 Average Turnaround Time: 2428.5333333333338
 

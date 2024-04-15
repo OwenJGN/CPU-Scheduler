@@ -56,7 +56,8 @@ def run_experiment(seeds, experiment_num):
         f.write("\nOverall averages:\n")
         for sch, data in scheduler_data.items():
             f.write(f"Scheduler: {sch}\n")
-            f.write(f"Average Waiting Time: {data['average_waiting_time'] / 5}\n")
+            if experiment_num != 3:
+                f.write(f"Average Waiting Time: {data['average_waiting_time'] / 5}\n")
             if experiment_num == 1:
                 f.write(f"Average throughput: {data['throughput'] / 5}\n")
             elif experiment_num == 3:
