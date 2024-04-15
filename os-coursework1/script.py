@@ -31,12 +31,12 @@ def run_experiment(seeds, experiment_num):
     scheduler_data = {sch: {"average_waiting_time": 0, "throughput": 0, "average_turnaround_time": 0} for sch in
                       schedulers}
 
-    with open(f"D:\\GitHub Repos\\CPU-Scheduler\\os-coursework1\\Experiment_{experiment_num}.txt", "w") as f:
+    with open(f"Experiments\\{experiment_num}\\Experiment_{experiment_num}.txt", "w") as f:
         for seed in seeds:
             f.write("-----------------------------------------------------------\n")
             f.write(f"Current seed: {seed}\n")
             for sch in schedulers:
-                file_path = f"D:\\GitHub Repos\\CPU-Scheduler\\os-coursework1\\Experiments\\" \
+                file_path = f"Experiments\\" \
                             f"{experiment_num}\\scheduler_outputs\\{sch}\\output-seed_{seed}.out"
                 wt, tp, tat = calculate_metrics(file_path)
                 f.write(f"Scheduler: {sch}\n")
@@ -72,4 +72,4 @@ experiment_seeds = [["12382", "68846", "82050", "5112", "97108"],
                     ["80253", "41649", "72592", "7885", "36334"]]
 
 for i, exp_seeds in enumerate(experiment_seeds):
-    run_experiment(seeds, i + 1)
+    run_experiment(exp_seeds, i + 1)
