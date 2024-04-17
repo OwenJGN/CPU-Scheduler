@@ -5,139 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1313b5a3-8a76-44ce-b4ac-78af9ac686c2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/os-coursework1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/script.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OS Report - 262924.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../OS Report - 262924.docx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiment_1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiment_2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiment_3.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/1/input_files/input-seed_12382.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/1/input_files/input-seed_5112.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/1/input_files/input-seed_68846.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/1/input_files/input-seed_82050.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/1/input_files/input-seed_97108.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/1/input_parameters/input_parameters-seed_12382.prp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/1/input_parameters/input_parameters-seed_5112.prp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/1/input_parameters/input_parameters-seed_68846.prp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/1/input_parameters/input_parameters-seed_82050.prp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/1/input_parameters/input_parameters-seed_97108.prp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/1/scheduler_outputs/FcfsScheduler/output-seed_12382.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/1/scheduler_outputs/FcfsScheduler/output-seed_5112.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/1/scheduler_outputs/FcfsScheduler/output-seed_68846.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/1/scheduler_outputs/FcfsScheduler/output-seed_82050.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/1/scheduler_outputs/FcfsScheduler/output-seed_97108.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/1/scheduler_outputs/FeedbackRRScheduler/output-seed_12382.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/1/scheduler_outputs/FeedbackRRScheduler/output-seed_5112.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/1/scheduler_outputs/FeedbackRRScheduler/output-seed_68846.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/1/scheduler_outputs/FeedbackRRScheduler/output-seed_82050.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/1/scheduler_outputs/FeedbackRRScheduler/output-seed_97108.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/1/scheduler_outputs/IdealSJFScheduler/output-seed_12382.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/1/scheduler_outputs/IdealSJFScheduler/output-seed_5112.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/1/scheduler_outputs/IdealSJFScheduler/output-seed_68846.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/1/scheduler_outputs/IdealSJFScheduler/output-seed_82050.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/1/scheduler_outputs/IdealSJFScheduler/output-seed_97108.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/1/scheduler_outputs/RRScheduler/output-seed_12382.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/1/scheduler_outputs/RRScheduler/output-seed_5112.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/1/scheduler_outputs/RRScheduler/output-seed_68846.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/1/scheduler_outputs/RRScheduler/output-seed_82050.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/1/scheduler_outputs/RRScheduler/output-seed_97108.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/1/scheduler_outputs/SJFScheduler/output-seed_12382.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/1/scheduler_outputs/SJFScheduler/output-seed_5112.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/1/scheduler_outputs/SJFScheduler/output-seed_68846.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/1/scheduler_outputs/SJFScheduler/output-seed_82050.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/1/scheduler_outputs/SJFScheduler/output-seed_97108.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/1/simulator_parameters/FcfsScheduler_simulator_parameters.prp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/1/simulator_parameters/FeedbackRRScheduler_simulator_parameters.prp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/1/simulator_parameters/IdealSJFScheduler_simulator_parameters.prp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/1/simulator_parameters/RRScheduler_simulator_parameters.prp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/1/simulator_parameters/SJFScheduler_simulator_parameters.prp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/2/input_files/input-seed_10291.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/2/input_files/input-seed_11654.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/2/input_files/input-seed_24870.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/2/input_files/input-seed_8621.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/2/input_files/input-seed_93333.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/2/input_parameters/input_parameters-seed_10291.prp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/2/input_parameters/input_parameters-seed_11654.prp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/2/input_parameters/input_parameters-seed_24870.prp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/2/input_parameters/input_parameters-seed_8621.prp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/2/input_parameters/input_parameters-seed_93333.prp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/2/scheduler_outputs/FcfsScheduler/output-seed_10291.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/2/scheduler_outputs/FcfsScheduler/output-seed_11654.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/2/scheduler_outputs/FcfsScheduler/output-seed_24870.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/2/scheduler_outputs/FcfsScheduler/output-seed_8621.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/2/scheduler_outputs/FcfsScheduler/output-seed_93333.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/2/scheduler_outputs/FeedbackRRScheduler/output-seed_10291.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/2/scheduler_outputs/FeedbackRRScheduler/output-seed_11654.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/2/scheduler_outputs/FeedbackRRScheduler/output-seed_24870.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/2/scheduler_outputs/FeedbackRRScheduler/output-seed_8621.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/2/scheduler_outputs/FeedbackRRScheduler/output-seed_93333.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/2/scheduler_outputs/IdealSJFScheduler/output-seed_10291.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/2/scheduler_outputs/IdealSJFScheduler/output-seed_11654.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/2/scheduler_outputs/IdealSJFScheduler/output-seed_24870.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/2/scheduler_outputs/IdealSJFScheduler/output-seed_8621.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/2/scheduler_outputs/IdealSJFScheduler/output-seed_93333.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/2/scheduler_outputs/RRScheduler/output-seed_10291.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/2/scheduler_outputs/RRScheduler/output-seed_11654.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/2/scheduler_outputs/RRScheduler/output-seed_24870.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/2/scheduler_outputs/RRScheduler/output-seed_8621.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/2/scheduler_outputs/RRScheduler/output-seed_93333.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/2/scheduler_outputs/SJFScheduler/output-seed_10291.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/2/scheduler_outputs/SJFScheduler/output-seed_11654.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/2/scheduler_outputs/SJFScheduler/output-seed_24870.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/2/scheduler_outputs/SJFScheduler/output-seed_8621.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/2/scheduler_outputs/SJFScheduler/output-seed_93333.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/2/simulator_parameters/FcfsScheduler_simulator_parameters.prp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/2/simulator_parameters/FeedbackRRScheduler_simulator_parameters.prp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/2/simulator_parameters/IdealSJFScheduler_simulator_parameters.prp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/2/simulator_parameters/RRScheduler_simulator_parameters.prp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/2/simulator_parameters/SJFScheduler_simulator_parameters.prp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/3/input_files/input-seed_36334.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/3/input_files/input-seed_41649.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/3/input_files/input-seed_72592.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/3/input_files/input-seed_7885.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/3/input_files/input-seed_80253.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/3/input_parameters/input_parameters-seed_36334.prp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/3/input_parameters/input_parameters-seed_41649.prp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/3/input_parameters/input_parameters-seed_72592.prp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/3/input_parameters/input_parameters-seed_7885.prp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/3/input_parameters/input_parameters-seed_80253.prp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/3/scheduler_outputs/FcfsScheduler/output-seed_36334.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/3/scheduler_outputs/FcfsScheduler/output-seed_41649.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/3/scheduler_outputs/FcfsScheduler/output-seed_72592.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/3/scheduler_outputs/FcfsScheduler/output-seed_7885.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/3/scheduler_outputs/FcfsScheduler/output-seed_80253.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/3/scheduler_outputs/FeedbackRRScheduler/output-seed_36334.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/3/scheduler_outputs/FeedbackRRScheduler/output-seed_41649.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/3/scheduler_outputs/FeedbackRRScheduler/output-seed_72592.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/3/scheduler_outputs/FeedbackRRScheduler/output-seed_7885.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/3/scheduler_outputs/FeedbackRRScheduler/output-seed_80253.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/3/scheduler_outputs/IdealSJFScheduler/output-seed_36334.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/3/scheduler_outputs/IdealSJFScheduler/output-seed_41649.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/3/scheduler_outputs/IdealSJFScheduler/output-seed_72592.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/3/scheduler_outputs/IdealSJFScheduler/output-seed_7885.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/3/scheduler_outputs/IdealSJFScheduler/output-seed_80253.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/3/scheduler_outputs/RRScheduler/output-seed_36334.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/3/scheduler_outputs/RRScheduler/output-seed_41649.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/3/scheduler_outputs/RRScheduler/output-seed_72592.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/3/scheduler_outputs/RRScheduler/output-seed_7885.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/3/scheduler_outputs/RRScheduler/output-seed_80253.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/3/scheduler_outputs/SJFScheduler/output-seed_36334.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/3/scheduler_outputs/SJFScheduler/output-seed_41649.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/3/scheduler_outputs/SJFScheduler/output-seed_72592.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/3/scheduler_outputs/SJFScheduler/output-seed_7885.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/3/scheduler_outputs/SJFScheduler/output-seed_80253.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/3/simulator_parameters/FcfsScheduler_simulator_parameters.prp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/3/simulator_parameters/FeedbackRRScheduler_simulator_parameters.prp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/3/simulator_parameters/IdealSJFScheduler_simulator_parameters.prp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/3/simulator_parameters/RRScheduler_simulator_parameters.prp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experiments/3/simulator_parameters/SJFScheduler_simulator_parameters.prp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/experiment-script.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run.log" beforeDir="false" afterPath="$PROJECT_DIR$/run.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,7 +36,8 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/owenj/GitHub_Repos/CPU-Scheduler/os-coursework1"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -179,5 +50,16 @@
       <updated>1713187274000</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
